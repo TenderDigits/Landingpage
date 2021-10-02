@@ -9,6 +9,11 @@ body {
     color: #000;
 }
 
+header {
+    border-bottom: #000 solid 2px;
+    margin: 20px 0;
+}
+
 header h1 {
     font-weight: bold;
     font-size: 50px;
@@ -41,14 +46,16 @@ header nav ul li a {
     font-size: 33px;
 }
 
-h3 img {
+div img {
     width: 550px;
     height: 300px;
 }
 
 .container {
     border: black, solid, 3px;
+    margin: 40px 0;
     display: flex;
+
 }
 
 .card {
