@@ -46,6 +46,11 @@ h3 img {
     height: 300px;
 }
 
+.container {
+    border: black, solid, 3px;
+    display: flex;
+}
+
 .card {
     width: 29.5%;
     margin: 25px 25px;
@@ -56,6 +61,11 @@ h3 img {
     flex: 0 0 400px;
 }
 
+.websites {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .bio img {
     box-sizing: border-box;
