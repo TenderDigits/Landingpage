@@ -14,6 +14,7 @@ header {
     margin: 20px 0;
 }
 
+/* my first and last name */
 header h1 {
     font-weight: bold;
     font-size: 50px;
@@ -47,7 +48,7 @@ header nav ul li a {
 }
 
 div img {
-    width: 550px;
+    width: 100%;
     height: 300px;
 }
 
@@ -59,14 +60,13 @@ div img {
 }
 
 .card {
-    width: 29.5%;
     margin: 25px 25px;
     border-style: solid;
     border-width: 1px;
     border-radius: 2px;
     padding: 10px;
-    flex: 0 0 400px;
 }
+
 
 .websites {
     display: flex;
@@ -74,17 +74,43 @@ div img {
     justify-content: center;
 }
 
+.resize {
+    width: 300px;
+}
+
+.large {
+    width: 100%;
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div h3 {
+    padding: 0px;
+    margin: 0px 25px 30px 25px;
+    font-weight: normal;
+    font-size: large;
+}
+
 .bio img {
     box-sizing: border-box;
-    margin: 25px 25px;
+    margin: 0px 30px;
     border-style: solid;
     border-width: 1px;
     border-radius: 2px;
     flex: 0 0 400px;
     width: 200px;
-    height: 200px;
-    padding: 0 20px 0 20px
-    float: left;
+}
+
+.line {
+    margin: 0 0 10px 118px;
+}
+
+h4 {
+    font-weight: normal;
 }
 
 footer {
@@ -97,6 +123,8 @@ footer {
 section {
     padding: 0px;
     margin: 30px 25px 30px 25px;
+    font-weight: normal;
+    font-size: large;
 }
 
 
