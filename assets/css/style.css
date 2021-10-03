@@ -66,13 +66,15 @@ div img {
 
 }
 
-.card {
+.card, .small-card {
+    font-size: 10px;
     margin: 25px 25px;
     border-style: solid;
     border-width: 1px;
     border-radius: 2px;
     padding: 10px;
     flex-shrink: 0;
+    flex: wrap;
 }
 
 
@@ -84,6 +86,7 @@ div img {
 
 .font {
     font-weight: bold;
+    font-size: 30px;
     flex-shrink: 0;
 }
 
@@ -123,10 +126,6 @@ div h3 {
     margin: 0 30px 30px 30px;
 }
 
-.line {
-    margin: 0;
-}
-
 footer {
     background: #800000;
     width: 100%;
@@ -138,10 +137,120 @@ section {
     padding: 0px;
     margin: 20px 25px;
     font-weight: normal;
-    font-size: large;
+    font-size: 20px;
 }
 
-h4 {
-    font-weight: bold;
+/* start of media queries */
+@media screen and (max-width: 1024px) {
+    .websites {
+        display: felx;
+        flex-direction: column;
+    }
 }
 
+/* resizing of border around run-buddy */
+@media screen and (max-width: 1024px) {
+    .card {
+        border-style: solid;
+        width: 400px;
+        height: 350px;
+    }
+}
+
+/* resizing of border around Horiseon and github */
+@media screen and (max-width: 1024px) {
+    .small-card {
+        border-style: solid;
+        width: 300px;
+    }
+}
+
+/* placing navigation directly under name */
+@media screen and (max-width: 768px) {
+    .stack {
+        float: left;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .websites {
+        display: felx;
+        flex-direction: column;
+    }
+}
+
+/* resizing of border around run-buddy */
+@media screen and (max-width: 540px) {
+    .card {
+        border-style: solid;
+        width: 250px;
+        height: 225px;
+    }
+}
+
+/* resizing of border around Horiseon and GitHub */
+@media screen and (max-width: 540px) {
+    .small-card {
+        border-style: solid;
+        width: 200px;
+    }
+}
+
+/* resizing run-buddy img for small screens */
+@media screen and (max-width: 540px) {
+    .large {
+        width: 250px;
+        height: 200px;
+}
+
+/* column navigation for small screens */
+@media screen and (max-width: 540px) {
+    .phone {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* resizing Horiseon & Github img */
+@media screen and (max-width: 540px) {
+    .resize {
+        width: 200px;
+        height: 150px;
+}
+
+/* bio img & <p> column for small screens */
+@media screen and (max-width: 540px) {
+    .bio {
+        flex-direction: column;
+    }
+}
+
+/* margins for bio paragraph */
+@media screen and (max-width: 540px) {
+    .bio p {
+        margin: 0 120px 20px 0
+    }
+}
+
+/* resizing of bio img for small screen */
+@media screen and (max-width: 540px) {
+    .bio img {
+        flex: none;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* resizing of name for small screen */
+@media screen and (max-width: 540px) {
+    header h1 {
+        font-size: 40px;
+    }
+}
+
+/* resizing of nav for small screen */
+@media screen and (max-width: 540px) {
+    header nav ul li a {
+        font-size: 25px;
+    }
+}
