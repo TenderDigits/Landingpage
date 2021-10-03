@@ -41,6 +41,7 @@ header nav ul li {
     
 }
 
+/* styling of nav links */
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
@@ -90,14 +91,17 @@ div img {
     flex-shrink: 0;
 }
 
+/* smaller photos for secondary projects */
 .resize {
     width: 300px;
 }
 
+/* width of primary project image */
 .large {
     width: 100%;
 }
 
+/* flex properties of about me section */
 .bio {
     display: flex;
     flex-direction: row;
@@ -105,6 +109,7 @@ div img {
     margin: 30px 30px 30px 30px;
 }
 
+/* about me title styling and spacing */
 div h3 {
     padding: 0px;
     margin: 0;
